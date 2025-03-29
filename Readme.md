@@ -63,9 +63,9 @@ npm
 ### Задача 2: Добавление кастомного синтаксиса (markdown-it)
 Задача: Реализовать поддержку:
 
-:::alert Текст::: → <div class="alert">Текст</div>
+```:::alert Текст::: → <div class="alert">Текст</div>```
 
-???spoiler "Заголовок" → Скрываемый блок.
+```???spoiler "Заголовок" → Скрываемый блок.```
 
 В package.json:
 
@@ -113,10 +113,7 @@ export function activate(context: vscode.ExtensionContext) {
 ### Задача 3: Интерактивные элементы (JavaScript)
 Задача: Сделать спойлеры интерактивными.
 
-Требования:
-
 В package.json:
-
 ```json
 "contributes": {
   "markdown.previewScripts": ["./scripts/preview.js"]
